@@ -2,8 +2,7 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
-#include <cmath>
-#include <algorithm>
+#include <unordered_map>
 
 int main() {
     std::ifstream file("input.txt");
@@ -28,16 +27,19 @@ int main() {
 
     file.close();
 
-    std::sort(column_1.begin(), column_1.end());
-    std::sort(column_2.begin(), column_2.end());
-
-    int sum_dif = 0;
-    size_t size = std::min(column_1.size(), column_2.size());
-    for (size_t i = 0; i < size; ++i) {
-        sum_dif += std::abs(column_1[i] - column_2[i]);
+    std::unordered_map<int, int> cont_column_2;
+    for (int num : column_2) {
+        cont_column_2[num]++;
     }
 
-    std::cout << "Solution: " << sum_dif << std::endl;
+     int result = 0;
+    for (int num : column_1) {
+        if (cont_column_2.find(num) != cont_column_2.end()) {
+            result += num * cont_column_2[num];
+        }
+    }
+
+    std::cout << "Solution: " << result << std::endl;
 
     return 0;
 }
