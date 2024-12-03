@@ -32,7 +32,7 @@ int main() {
         cont_column_2[num]++;
     }
 
-     int result = 0;
+    int result = 0;
     for (int num : column_1) {
         if (cont_column_2.find(num) != cont_column_2.end()) {
             result += num * cont_column_2[num];
