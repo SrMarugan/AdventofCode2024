@@ -5,4 +5,4 @@ Python 3/50 -> 1.1, 1.2, 2.1
 
 C++ 3/50 -> 1.1, 1.2, 2.1
 
-![Advent of Code 2024](https://github.com/user-attachments/assets/607677ef-4e28-4739-ac17-ddc17d6afe04)
+![Advent of Code 2024](https://github.com/user-attachments/assets/8d1b3bda-fada-41b0-9a41-01aa4cb715b7)
