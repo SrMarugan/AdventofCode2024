@@ -1,7 +1,7 @@
 # Advent of Code 2024
 Code solutions that I made for resolve the problems of the Advent of Code 2024 in C++ and Python
 
-Python 3/50 -> 1.1, 1.2, 2.1, 2.2
+Python 4/50 -> 1.1, 1.2, 2.1, 2.2
 
 C++ 3/50 -> 1.1, 1.2, 2.1
 
